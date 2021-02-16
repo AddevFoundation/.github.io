@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>My Portfolio - Addev Foundation</title>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;600&display=swap');
+        * {
+            font-family: 'Poppins','Playfair Display', serif;
+        }
+
+        body {
+            background-image: url('mount.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .jumbotron {
+            margin-top: -6rem;
+            display: flex;
+            align-items: flex-end;
+            height: 100vh;
+        }
+
+        .card {
+            border-radius: 2%;
+            border-top: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+
+        .display-4, h1, h2 {
+            font-family: 'Playfair Display';
+        }
+
+        .lead {
+            font-size: 17px;
+        }
+
+        .btn {
+            border-bottom: 3px solid #00b1dd;
+            color: #00b1dd;
+        }
+        .wrapper {
+            max-width: 1080px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .wrapper .center-line {
+            margin-top: -4em;
+            position: absolute;
+            height: 95%;
+            width: 4px;
+            background: white;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .wrapper .row {
+            display: flex;
+        }
+        .wrapper .row1, .row3, .row5, .row7 .row9 {
+            justify-content: flex-start;
+        }
+        .wrapper .row2, .row4, .row6, .row8 {
+            justify-content: flex-end;
+        }
+        .wrapper .row section {
+            background: white;
+            border-radius: 5px;
+            width: calc(50% - 40px);
+            padding: 20px;
+            position: relative;
+        }
+        .row section .details .title {
+            font-size: 25px;
+            font-weight: 600;
+        }
+        .row section p {
+            margin: 10px 0 17px 0;
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        .row section .bottom a {
+            text-decoration: none;
+        }
+
+        .progress {
+            height: 10px;
+            border-radius: 0;
+        }
+
+        h5 {
+            font-weight: 600;
+        }
+
+        label {
+            font-size: 15px;
+            font-weight: 300;
+        }
+        .social .card .card-body .media, a {
+            color: white;
+            display: block;
+            margin: 1em;
+        }
+        
+        .fab {
+            font-size: 20px;
+        }
+        
+        .fab:hover {
+            color: gray;
+        }
+
+@media (max-width: 576px) {
+            body {
+                background-position: right 0;
+            }
+            .navbar-toggler {
+                display: none;
+            }
+            .jumbotron {
+                content: '';
+                margin-top: 0;
+                align-items: center;
+            }
+
+            .about .card {
+                text-align: center;
+            }
+
+            .social .card {
+                border-radius: 5px;
+                border-right: 1px solid #fff;
+            }
+            .social .card .card-body .media {
+                display: flex;
+                justify-content: center;
+                height: 5em;
+            }
+            
+            .social .card .card-body .media a {
+                width: 2em;
+                justify-content: center;
+                
+            }
+            .social span {
+                visibility: hidden;
+            }
+            
+            .fab {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent mt-4">
+        <img class="mx-3" src="logo.png" width="30" height="30">
+        <a class="navbar-brand" href="#">
+            Addev <span class="text-info">Foundation</span>
+        </a>
+    </nav>
+    <div class="bg-transparent jumbotron jumbotron-fluid text-light">
+        <div class="container">
+            <h1 class="display-4">Assalamu'alaikum,</h1>
+            <p class="lead">
+                Selamat Datang Di Landing Page Pribadi Saya, Saya Seorang Manusia Yang Sulit Menentukan Tujuan Hidup...
+            </p>
+            <p>
+                <a target="_blank" href="#introducing" class="btn-sm btn">Read me</a>
+            </p>
+        </div>
+    </div>
+
+    <div id="introducing" class="about d-flex justify-content-center text-light">
+        <div class="row w-100 justify-content-center">
+            <div class="col-md-12 col-12 text-center mt-3">
+                <h1>Life Story</h1>
+                <hr class="bg-light w-50" />
+            </div>
+            <div class="card-body col-12 text-left">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-info text-center">Short Story</h2>
+                        <p>
+                            <span class="h4">P</span>erkenalkan, Saya Memiliki Nama <strong>Brian Adi</strong>
+                        </p>
+                        <p>
+                            Saya berumur 15 tahun, Saya lahir di kota Ponorogo, tepatnya di ds.Kapuran, kec.Badegan.
+                        </p>
+                        <p>
+                            Saya sekarang seorang pelajar yang sedang belajar di SMKN 1 Badegan, dan Saya mengambil jurusan TKJ(Teknik Komputer dan Jaringan).
+                        </p>
+                        <p>
+                            Jika kalian tidak sungkan, Saya akan menceritakan awal saya bisa suka dengan dunia IT(Information Technology).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body col-12">
+                <div class="card-body text-center">
+                    <h2 class="text-info">Long Story</h2>
+                </div>
+                <div class="wrapper">
+                    <div class="center-line"></div>
+                    <div class="row row1">
+                        <section class="card bg-transparent text-right">
+                            <div class="details">
+                                <span class="title">2016</span>
+                            </div>
+                            <p>
+                                <span class="h4">P</span>ertama, dulu waktu kelas 6 SD Saya minta HP sama orang tua. <br /><br /> Itu hp pertama kali, ramnya masih 1GB. <br /><br /> Waktu punya HP itu setiap hari enggak berhenti ngegame (waktu itu ngetrend COC(Clash of Clans)), ngegame sambil ngecharge, makan sambil ngecharge, dll. <br /><br />Sampek belom setahun udah rusak gara-gara baterai kembung.
+                            </p>
+                        </section>
+                    </div>
+                    <div class="row row2">
+                        <section class="card bg-transparent text-left">
+                            <div class="details">
+                                <span class="title">2017</span>
+
+                            </div>
+
+                            <p>
+                                <span class="h4">K</span>edua, Satu tahun setelah HP tadi rusak, Saya dikasih HP sama Kakak pertama Saya, nah, ceritanya dimulai..
+                            </p>
+                        </section>
+                    </div>
+                    <div class="row row3">
+                        <section class="card bg-transparent text-right">
+                            <div class="details">
+                                <span class="title">2018</span>
+
+                            </div>
+                            <p>
+                                <span class="h4">D</span>itahun ini, Saya ngegame terus siang, sore, malam. <br /><br />Waktu itu gamenya Mobile Legends : Bang Bang, waktu itu dari kelas 7 sampai 8 SMP.<br /><br />Nah, dikelas 9 ini Saya mulai tertarik dengan IT.
+                            </p>
+
+                        </section>
+                    </div>
+                    <div class="row row4">
+                        <section class="card bg-transparent text-left">
+                            <div class="details">
+                                <span class="title">2019</span>
+
+                            </div>
+                            <p>
+                                <span class="h4">P</span>ada waktu itu, pertama kali main Termux, buat Hek FB:), dulu pas bisa install package aja kayak jadi hacker, <code>pkg install</code>, <code>git clone</code>.<br /><br />Pokoknya itu kenangan banget deh.
+                            </p>
+
+                        </section>
+                    </div>
+                    <div class="row row5">
+                        <section class="card bg-transparent text-right">
+                            <div class="details">
+                                <span class="title">2020</span>
+
+                            </div>
+                            <p>
+                                <span class="h4">I</span>ni tahun dimana pertama kali tau apa itu Komputer, pas waktu ada Ujian pasti ke lab.Komputer. <br /><br />Ya disana cuma pengenalan aja apa itu komputer, Pertengahan tahun Kakak kedua Saya pulang kerumah, Dia membawa laptop dan Saya pinjam punya Dia.
+                            </p>
+
+                        </section>
+                    </div>
+                    <div class="row row6">
+                        <section class="card bg-transparent text-left">
+                            <p>
+                                <span class="h4">Fact : </span>Oh, tadi lupa. <br /><br />Pertama kali kenal dengan pemrograman dari Channel Youtube Web Programming Unpas.<br /><br /> Muncul diberanda Youtube. <br /><br /> Saya coba tonton, eh kok menarik. <br /><br />Akhirnya saya mulai mempelajari/mendalami menjadi Web Developer.
+                            </p>
+
+                        </section>
+                    </div>
+
+                    <div class="row row7">
+                        <section class="card bg-transparent text-right">
+                            <div class="details">
+                                <span class="title">2020</span>
+                                <small>Akhir</small>
+                            </div>
+                            <p>
+                                <span class="h4">S</span>aya mencari-cari referensi/tutorial yg berhubungan dengan Web Developer, dari HTML, CSS, PHP.<br /><br /> Saya belum mempelajari tentang JavaScript, sama sekali saya belom bisa JavaScript.
+                            </p>
+
+                        </section>
+                    </div>
+                    <div class="row row8">
+                        <section class="card bg-transparent text-left">
+                            <div class="details">
+                                <span class="title">2021</span>
+
+                            </div>
+                            <p>
+                                <span class="h4">S</span>aya nonton video youtube Web Programming Unpas yang membahasa tentang Flutter. <br /><br /> Terus saya kepikiran "Kok keren juga", dan akhirnya saya mulai belajar Flutter sampai sekarang.
+                            </p>
+
+                        </section>
+                    </div>
+                    <div class="row row9">
+                        <section class="card bg-transparent text-right">
+
+                            <p>
+                                <span class="h4">Fact : </span>Sebelum ke Flutter Saya pernah belajar Framework Laravel.
+                            </p>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="other" class="skills text-light justify-content-center d-flex">
+        <div class="row w-100 justify-content-center">
+            <div class="col-md-12 col-12 text-center mt-3">
+                <h1>Other</h1>
+                <hr class="bg-light w-50" />
+            </div>
+            <div class="col-md-8 my-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-info text-center">Skills</h2>
+                    </div>
+                    <div class="container">
+                        <div class="lang">
+                            <h5>Language</h5>
+                            <label for="html">HTML</label>
+                            <div class="progress">
+                                <div class="progress-bar" id="html" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    75%
+                                </div>
+                            </div>
+                            <br />
+                            <label for="css">CSS</label>
+                            <div class="progress">
+                                <div class="progress-bar" id="css" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    60%
+                                </div>
+                            </div>
+                            <br />
+                            <label for="php">PHP</label>
+                            <div class="progress">
+                                <div class="progress-bar" id="php" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    50%
+                                </div>
+                            </div>
+                            <br />
+                            <label for="dart">Dart</label>
+                            <div class="progress">
+                                <div class="progress-bar" id="dart" role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    30%
+                                </div>
+                            </div>
+                            <br />
+                        </div>
+                        <hr />
+                        <div class="framework">
+                            <h5>Framework</h5>
+                            <label for="laravel">Laravel</label>
+                            <div class="progress">
+                                <div class="progress-bar" id="laravel" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    70%
+                                </div>
+                            </div>
+                            <br />
+                            <label for="flutter">FLutter</label>
+                            <div class="progress">
+                                <div class="progress-bar" id="flutter" role="progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    10%
+                                </div>
+                            </div>
+                            <br />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 social mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-info text-center mb-3">Social</h2>
+                        <div class="media">
+                            <a target="_blank" href="https://m.facebook.com/xwise.athena.9">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a target="_blank" href="https://m.youtube.com/channel/UCJi4Z4F5Fokty-DCAFEq1IQ">
+                                <i class="fab fa-youtube"></i>
+                                <span>Youtube</span>
+                            </a>
+                            <a target="_blank" href="https://github.com/Dev-Add">
+                                <i class="fab fa-github"></i>
+                                <span>Github</span>
+                            </a>
+                            <a target="_blank" href="https://www.instagram.com/brianadd_/">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a target="_blank" href="mailto:athena.xwise@gmail.com">
+                                <i class="fab fa-google-plus"></i>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
